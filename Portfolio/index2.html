@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<title>LAYOUT DESbbIGN</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<!-- HEADER -->
+	<header>
+		<!-- LEFT -->
+		<div>
+			<h1>LOGO</h1>
+		</div>
+		<!-- RESPONSIVE MENU BUTTON -->
+		<div id="menuBtn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- MENU LIST -->
+		<nav>
+			<ul>
+				<li><a href="#top">MENU1</a></li>
+				<li><a href="#history">MENU2</a></li>
+				<li><a href="#content">MENU3</a></li>
+				<li><a href="#mailform">MENU4</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- DOT NAVIGATION SUPPORT -->
+	<div class="dotLink">
+		<a href="#top"></a>
+		<a href="#history"></a>
+		<a href="#content"></a>
+		<a href="#mailform"></a>
+	</div>
+
+	<!-- MAIN -->
+	<main>
+		<!-- TOP DISP -->
+		<section id="top">
+			<div>
+				<h1>TITLE</h1>
+				<p>Sample Sample Sample Sample Sample</p>
+			</div>
+		</section>
+
+		<!-- HISTORY DISP -->
+		<section id="history">
+			<div>
+				<!-- 見出しサンプル -->
+				<h2>TITLE HISTORY</h2>
+
+				<!-- ツリーデザイン用 -->
+				<div class="tree">
+					<div class="stem"></div>
+					<div class="branch">
+						<h2>title</h2>
+						<p>text text text text text</p>
+					</div>
+					<div class="branch">
+						<h2>title</h2>
+						<p>text text text text text</p>
+					</div>
+					<div class="branch">
+						<h2>title</h2>
+						<p>text text text text text</p>
+					</div>
+					<div class="branch">
+						<h2>title</h2>
+						<p>text text text text text</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTENTS DISP -->
+		<section id="content">
+			<div>
+				<!-- 横並び用のクラスを作成 -->
+				<div class="three_columns">
+					<div>
+						<h3>title 1</h3>
+						<p>text</p>
+					</div>
+					<div>
+						<h3>title 2</h3>
+						<p>text</p>
+					</div>
+					<div>
+						<h3>title 3</h3>
+						<p>text</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- MAIL FORM DISP -->
+		<section id="mailform">
+			<div>
+				<form method="post" action="php/mail.php">
+					<p id="name">
+						<label for="name">氏名<span></span></label>
+						<input type="text" name="name" placeholder="氏名" maxlength="100" required>
+					</p>
+					<p id="tel">
+						<label for="tel">電話番号<span></span></label>
+						<input type="tel" name="tel" placeholder="0123456789" maxlength="12" required>
+					</p>
+					<p id="mail">
+						<label for="email">氏名<span></span></label>
+						<input type="email" name="email" placeholder="example@test.mail" maxlength="255" required>
+					</p>
+					<p id="subject">
+						<label for="subject">氏名<span></span></label>
+						<input type="text" name="subject" placeholder="件名" maxlength="150">
+					</p>
+					<p id="matter">
+						<label for="matter">氏名<span></span></label>
+						<textarea name="matter" placeholder="お問い合わせ内容" maxlength="500" required></textarea>
+					</p>
+					<input type="submit" name="submit" value="送信内容確認画面へ">
+				</form>
+			</div>
+		</section>
+	</main>
+
+</body>
+</html>

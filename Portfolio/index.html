@@ -22,10 +22,10 @@
 		<!-- MENU LIST -->
 		<nav>
 			<ul>
-				<li><a href="#top">MENU1</a></li>
-				<li><a href="#history">MENU2</a></li>
-				<li><a href="#content">MENU3</a></li>
-				<li><a href="#mailform">MENU4</a></li>
+				<li><a href="#top">MENU</a></li>
+				<li><a href="#history">MEIN</a></li>
+				<li><a href="#content">CAREEA</a></li>
+				<li><a href="#mailform">CONTENT</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -43,7 +43,10 @@
 		<!-- TOP DISP -->
 		<section id="top">
 			<div>
-				<h1>TITLE</h1>
+				<h1>I'M <br>
+					NAOYA<br>
+					MIYABARA.	
+				</h1>
 				<p>Sample Sample Sample Sample Sample</p>
 			</div>
 		</section>
@@ -80,20 +83,22 @@
 		<!-- CONTENTS DISP -->
 		<section id="content">
 			<div>
+				<h3>02 PORTFOLIO </h3>
+				<p>MY LATEST WORK. SEE MORE</p>
 				<!-- 横並び用のクラスを作成 -->
 				<div class="three_columns">
-					<div>
-						<h3>title 1</h3>
+
+					<!-- columns=3行表示 -->
+					<a href="" class="sample-box1">
+					</a>
+					<a href="" class="sample-box2">
+<!-- 						<h3>title 2</h3>
 						<p>text</p>
-					</div>
-					<div>
-						<h3>title 2</h3>
+ -->					</a>
+					<a href="" class="sample-box3">
+<!-- 						<h3>title 3</h3>
 						<p>text</p>
-					</div>
-					<div>
-						<h3>title 3</h3>
-						<p>text</p>
-					</div>
+ -->					</a>
 				</div>
 			</div>
 		</section>
@@ -101,29 +106,37 @@
 		<!-- MAIL FORM DISP -->
 		<section id="mailform">
 			<div>
-				<form method="post" action="php/mail.php">
-					<p id="name">
-						<label for="name">氏名<span></span></label>
-						<input type="text" name="name" placeholder="氏名" maxlength="100" required>
-					</p>
-					<p id="tel">
-						<label for="tel">電話番号<span></span></label>
-						<input type="tel" name="tel" placeholder="0123456789" maxlength="12" required>
-					</p>
-					<p id="mail">
-						<label for="email">氏名<span></span></label>
-						<input type="email" name="email" placeholder="example@test.mail" maxlength="255" required>
-					</p>
-					<p id="subject">
-						<label for="subject">氏名<span></span></label>
-						<input type="text" name="subject" placeholder="件名" maxlength="150">
-					</p>
-					<p id="matter">
-						<label for="matter">氏名<span></span></label>
-						<textarea name="matter" placeholder="お問い合わせ内容" maxlength="500" required></textarea>
-					</p>
-					<input type="submit" name="submit" value="送信内容確認画面へ">
-				</form>
+				<div class="left">
+					<h3>CONTACT</h3>
+					<p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p><br>
+					<p>Mail: tiu.miyabara@gmail.com</p>
+					<p>Tel: 090-1865-4909</p>
+				</div>
+				<div class="right">
+					<form method="post" action="php/mail.php" autocomplete="off">
+						<p id="name">
+							<label for="name"></label>
+							<input type="text" name="name" placeholder="氏名" maxlength="100" required>
+						</p>
+						<p id="tel">
+							<label for="tel"></label>
+							<input type="tel" name="tel" placeholder="0123456789" maxlength="12" required>
+						</p>
+						<p id="mail">
+							<label for="email"></label>
+							<input type="email" name="email" placeholder="example@test.mail" maxlength="255" required>
+						</p>
+						<p id="subject">
+							<label for="subject"></label>
+							<input type="text" name="subject" placeholder="件名" maxlength="150">
+						</p>
+						<p id="matter">
+							<label for="matter"></label>
+							<textarea name="matter" placeholder="お問い合わせ内容" maxlength="500" required></textarea>
+						</p>
+						<input type="submit" name="submit" value="送信">
+					</form>
+				</div>
 			</div>
 		</section>
 	</main>

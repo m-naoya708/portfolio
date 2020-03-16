@@ -224,3 +224,50 @@ input[type="submit"]{
 	width: 120px;
 	margin: 0px auto;
 }
+
+
+
+
+/*ーーーーーーーーーーーーーーーーーーーーーーーレスポンシブのCSSーーーーーーーーーーーーーーーーーーーーーーーーーー*/
+
+@media screen and (max-width: 800px){
+	header{
+		height: 76px;
+		width: 100%;
+	}
+	main > section#top > div > h1{
+		width: 85%;
+	}
+	main > section#top > div > p{
+		width: 85%;
+		font-size: 20px;
+		text-shadow: 0 0 2px #0d1e25,
+					 0 0 2px #0d1e25;
+		color: #9dff00;
+	}
+
+	.three_columns{
+		flex-flow: column;
+		bottom: 5%;
+		top: inherit;
+		transform: inherit;
+		/*ineherit=初期化*/
+	}
+	.three_columns > a {
+		width: calc( 90%);
+	 	height: 150px;
+ 	    margin: 0 auto;
+	}
+
+	section#mailform > div {
+	    flex-flow: column;
+	}
+
+	section#mailform > div >div {
+    width: calc(80%);
+	}
+
+}
+
+
+

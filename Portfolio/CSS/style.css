@@ -168,7 +168,11 @@ main > section#content > div > p{
 
 }
 main > section#mailform > div {
-	background-color: gray; 
+	background-color: #336699; 
+	color: #
+	width: 100%;
+	padding: 100px;
+
 }
 
 section#mailform > div{
@@ -225,6 +229,10 @@ input[type="submit"]{
 	margin: 0px auto;
 }
 
+section#mailform{
+	height: 100px;
+
+}
 
 
 
@@ -245,6 +253,10 @@ input[type="submit"]{
 					 0 0 2px #0d1e25;
 		color: #9dff00;
 	}
+> div {
+    flex-flow: column;
+    margin: 0 auto;
+}
 
 	.three_columns{
 		flex-flow: column;
@@ -267,6 +279,21 @@ input[type="submit"]{
     width: calc(80%);
 	}
 
+	.right > form > p > input {
+    display: block;
+    width: 120%;
+    margin: 0 auto;
+}
+	.right > form > p > textarea{
+	display: block;
+	width: 120%;
+	margin: 0 auto;
+	height: 80px
+
+}
+	section#mailform > div >div {
+    width: calc(80%);
+    padding-left: 30px;
 }
 
 

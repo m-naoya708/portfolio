@@ -1,9 +1,8 @@
 @charset "UTF-8";
 *{
-	margin: 0;
-	padding: 0;
 	box-sizing: border-box;
-}
+	text-align: center;
+}	
 ul,li{
 	list-style: none;
 }
@@ -14,7 +13,7 @@ a{
 header{
 	display: flex;
 	width: 100%;
-
+	background-color: #006291;
 }
 nav{
 	width:calc(100% - 250px);
@@ -33,7 +32,7 @@ main > section#top{
 	/*100vhは画面分の高さ　－　100px（ヘッダーの高さ）を引いた*/
 	/*calc()中身を計算する*/
 	/*background-color: green;*/
-	background-image: url(../img/blue_necktie.jpg);
+	background-image: url(../img/top1.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	/*attachement=固定表示*/
@@ -49,7 +48,7 @@ main > section#top > div{
 	/*画面に対して、relativeは相対的に位置を決める*/
 }
 main > section#top > div > h1{
-	color: red;
+	color: #fff;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -59,20 +58,32 @@ main > section#top > div > h1{
 	text-align: left;
 }
 main > section#top > div > p{
-	color: red;
+	color: #fff;
 	position: absolute;
 	bottom: 20%;
 	left: 50%;
 	transform: translateX(-50%);
-	width: 50%;
+	width: 50%;				
 	text-decoration: center;
 }
+
+/*---------------------ここからヒストリーーーーーーーーーーーーーーーーーーーーーーーー*/
+main > section#history{
+	padding: 100px;
+	background-image: url(../img/tabi1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover; 
+}
+
+/*ーーーーーーーーーーーーーーーーーーここからコンテンツーーーーーーーーーーーーーーーーーーー*/
 
 main > section#content{
 	height: 100vh;
 	width: 100%;
 	/*background-color: green;*/
-	background-image: url(../img/tokei1.jpg);
+	background-image: url(../img/top3.jpg);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
@@ -100,7 +111,7 @@ main > section#content > div{
 }
 
 main > section#content > div > h1{
-	color: red;
+	color: #fff;
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -111,65 +122,63 @@ main > section#content > div > h1{
 }
 
 main > section#content > div > h3{
-	color: red;
+	color: #fff;
 	text-align: center;
 	padding-top: 80px;
 	font-size: 40px;
 }
 main > section#content > div > p{
-	color: red;
+	color: #fff;
 	text-align: center;
 	padding: 50px;
 	font-size: 40px;
 }
 
 .sample-box1{
-	display: block;
-	color: red;	
-	width:300px;
+	color: #fff;	
 	height:300px;
 	background:blue;
 	border:1px solid #a7e;
-	background-image: url(../img/tokei1.jpg);
+	background-image: url(../img/keikaku.jpg);
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
 }
 .sample-box2{
 	display: block;
-	color: red;
+	color: #fff;
 	width:300px;
 	height:300px;
 	background:blue;
 	border:1px solid #a7e;
-	background-image: url(../img/tokei1.jpg);
+	background-image: url(../img/portfolio1.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
   }
 .sample-box3{
 	display: block;
-	color: red;
+	color: #fff;
 	width:300px;
 	height:300px;
 	background:blue;
 	border:1px solid #a7e;
-	background-image: url(../img/tokei1.jpg);
+	background-image: url(../img/kawa.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 }
 
-.secrion-id{
-	background-image: url(../img/kutu.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
-	background-size: cover;
+/*ーーーーーーーーーーーここから問い合わせフォームーーーーーーーーーーーーーーーーーーーーーーー*/
+section#mailform{
+	height: 100%;
+	background-color: #e5e8e1;
 
 }
-main > section#mailform > div {
-	background-color: #336699; 
-	color: #
+section#mailform > div {
+/*	background-image: url(../img/wakuwaku.jpg);*/
+	background-color: #e2e2e2;
+	color: #fff;
 	width: 100%;
 	padding: 100px;
 
@@ -178,7 +187,7 @@ main > section#mailform > div {
 section#mailform > div{
 	width: 800px;
 	display: flex;
-	margin: 30px auto;
+	margin: auto;
 }
 
 section#mailform > div >div{
@@ -229,11 +238,6 @@ input[type="submit"]{
 	margin: 0px auto;
 }
 
-section#mailform{
-	height: 100px;
-
-}
-
 
 
 /*ーーーーーーーーーーーーーーーーーーーーーーーレスポンシブのCSSーーーーーーーーーーーーーーーーーーーーーーーーーー*/
@@ -253,11 +257,11 @@ section#mailform{
 					 0 0 2px #0d1e25;
 		color: #9dff00;
 	}
-> div {
-    flex-flow: column;
-    margin: 0 auto;
-}
-
+	section#mailform > div {
+	    flex-flow: column;
+	    margin: 0 auto;
+	}
+	
 	.three_columns{
 		flex-flow: column;
 		bottom: 5%;
@@ -267,34 +271,29 @@ section#mailform{
 	}
 	.three_columns > a {
 		width: calc( 90%);
-	 	height: 150px;
- 	    margin: 0 auto;
+		height: 150px;
+		margin: 0 auto;
 	}
 
 	section#mailform > div {
 	    flex-flow: column;
 	}
-
 	section#mailform > div >div {
-    width: calc(80%);
+	    width: calc(80%);
+	    padding-left: 30px;
 	}
-
 	.right > form > p > input {
-    display: block;
-    width: 120%;
-    margin: 0 auto;
-}
+	    display: block;
+	    width: 120%;
+	    margin: 0 auto;
+	}
 	.right > form > p > textarea{
-	display: block;
-	width: 120%;
-	margin: 0 auto;
-	height: 80px
-
+		display: block;
+		width: 120%;
+		margin: 0 auto;
+		height: 80px
+	}
+	
 }
-	section#mailform > div >div {
-    width: calc(80%);
-    padding-left: 30px;
-}
-
 
 

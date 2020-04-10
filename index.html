@@ -1,11 +1,148 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<title></title>
+	<title>LAYOUT DESbbIGN</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+	<!-- HEADER -->
+	<header>
+		<!-- LEFT -->
+		<div>
+			<h1>LOGO</h1>
+		</div>
+		<!-- RESPONSIVE MENU BUTTON -->
+		<div id="menuBtn">
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<!-- MENU LIST -->
+		<nav>
+			<ul>
+				<li><a href="#top">MENU</a></li>
+				<li><a href="#history">MEIN</a></li>
+				<li><a href="#content">CAREEA</a></li>
+				<li><a href="#mailform">CONTENT</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<!-- DOT NAVIGATION SUPPORT -->
+	<div class="dotLink">
+		<a href="#top"></a>
+		<a href="#history"></a>
+		<a href="#content"></a>
+		<a href="#mailform"></a>
+	</div>
+
+	<!-- MAIN -->
+	<main>
+		<!-- TOP DISP -->
+		<section id="top">
+			<div>
+				<h1>I'M <br>
+					NAOYA<br>
+					MIYABARA.	
+				</h1>
+				<p>Sample Sample Sample Sample Sample</p>
+			</div>
+		</section>
+
+		<!-- HISTORY DISP -->
+		<section id="history">
+			<div>
+				<div>
+					<div></div>
+				</div>
+			</div>
+				<!-- 見出しサンプル -->
+				<h2>TITLE HISTORY</h2>
+
+				<!-- ツリーデザイン用 -->
+				<div class="tree">
+					<div class="stem"></div>
+					<div class="branch">
+						<h2>title</h2>
+						<p>text text text text text</p>
+					</div>
+					<div class="branch">
+						<h2>title</h2>
+						<p>text text text text text</p>
+					</div>
+					<div class="branch">
+						<h2>title</h2>
+						<p>text text text text text</p>
+					</div>
+					<div class="branch">
+						<h2>title</h2>
+						<p>text text text text text</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- CONTENTS DISP -->
+		<section id="content">
+			<div>
+				<h3>02 PORTFOLIO </h3>
+				<p>MY LATEST WORK. SEE MORE</p>
+				<!-- 横並び用のクラスを作成 -->
+				<div class="three_columns">
+
+					<!-- columns=3行表示 -->
+					<a href="" class="sample-box1">
+					</a>
+					<a href="" class="sample-box2">
+<!-- 						<h3>title 2</h3>
+						<p>text</p>
+ -->					</a>
+					<a href="" class="sample-box3">
+<!-- 						<h3>title 3</h3>
+						<p>text</p>
+ -->					</a>
+				</div>
+			</div>
+		</section>
+
+		<!-- MAIL FORM DISP -->
+		<section id="mailform">
+			<div>
+				<div class="left">
+					<h3>CONTACT</h3>
+					<p>I'm a paragraph. Click here to add your own text and edit me. I’m a great place for you to tell a story and let your users know a little more about you.</p><br>
+					<p>Mail: tiu.miyabara@gmail.com</p>
+					<p>Tel: 090-1865-4909</p>
+				</div>
+				<div class="right">
+					<form method="post" action="php/mail.php" autocomplete="off">
+						<p id="name">
+							<label for="name"></label>
+							<input type="text" name="name" placeholder="name" maxlength="100" required>
+						</p>
+						<p id="tel">
+							<label for="tel"></label>
+							<input type="tel" name="tel" placeholder="phone number" maxlength="12" required>
+						</p>
+						<p id="mail">
+							<label for="email"></label>
+							<input type="email" name="email" placeholder="e-mail@test.mail" maxlength="255" required>
+						</p>
+						<p id="subject">
+							<label for="subject"></label>
+							<input type="text" name="subject" placeholder="subject" maxlength="150">
+						</p>
+						<p id="matter">
+							<label for="matter"></label>
+							<textarea name="matter" placeholder="Inquiry" maxlength="500" required></textarea>
+						</p>
+						<input type="submit" name="submit" value="送信">
+					</form>
+				</div>
+			</div>
+		</section>
+	</main>
 
 </body>
 </html>

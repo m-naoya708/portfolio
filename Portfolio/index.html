@@ -4,13 +4,28 @@
 	<meta charset="utf-8">
 	<title>LAYOUT DESbbIGN</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+	$(function(){
+		$('a[href^="#"]').on('click', function(){
+			var speed = 500;	// 変数（入れ物・箱）
+			var link = $(this).attr('href');
+			var target = $(link == "#" ? 'html' : link);
+			var position = target.offset().top;
+			$("html, body").animate({scrollTop : position},speed,"swing");
+			return false;
+		});
+	});
+</script>
+
 </head>
 <body>
 	<!-- HEADER -->
 	<header>
 		<!-- LEFT -->
 		<div>
-			<h1>LOGO</h1>
+			<h1><a href="/"></a></h1>
 		</div>
 		<!-- RESPONSIVE MENU BUTTON -->
 		<div id="menuBtn">
@@ -21,10 +36,10 @@
 		<!-- MENU LIST -->
 		<nav>
 			<ul>
-				<li><a href="#top">MENU</a></li>
-				<li><a href="#history">MEIN</a></li>
+				<li><a href="#top">HOME</a></li>
+				<li><a href="#history">HISTORY</a></li>
 				<li><a href="#content">CAREEA</a></li>
-				<li><a href="#mailform">CONTENT</a></li>
+				<li><a href="#mailform">CONTACT</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -42,9 +57,9 @@
 		<!-- TOP DISP -->
 		<section id="top">
 			<div>
-				<h1>I'M <br>
+				<h1>I<span>'</span>M <br>
 					NAOYA<br>
-					MIYABARA.	
+					MIYABARA<span>.</span>	
 				</h1>
 				<p>Sample Sample Sample Sample Sample</p>
 			</div>
@@ -58,7 +73,7 @@
 				</div>
 			</div>
 				<!-- 見出しサンプル -->
-				<h2>TITLE HISTORY</h2>
+				<h2>01 HISTORY</h2>
 
 				<!-- ツリーデザイン用 -->
 				<div class="tree">

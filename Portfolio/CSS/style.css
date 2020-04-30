@@ -2,6 +2,8 @@
 *{
 	box-sizing: border-box;
 	text-align: center;
+	margin: 0;
+	padding: 0;
 }	
 ul,li{
 	list-style: none;
@@ -14,14 +16,44 @@ header{
 	display: flex;
 	width: 100%;
 	background-color: #006291;
+	position: relative;
 }
 nav{
-	width:calc(100% - 250px);
+	width:calc(50%);
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: transparent;
 }
 nav > ul{
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+}
+
+h1 {
+	float: left;
+	padding: 10px 0;
+}
+span {
+	color: #00D646;
+}
+h1 a {
+		display: block;
+		width: 100px;
+		height: 69px;
+		background: url(../img/naoya1.jpg) left top/100px auto no-repeat;
+	}
+
+nav > ul > li > a{
+	padding: 10px;
+	color: #fff;
+	transition: all .3s ease;
+}
+nav > ul > li > a:hover{
+	color: #00D646;
+}
 
 }
 main{
@@ -54,7 +86,7 @@ main > section#top > div > h1{
 	left: 50%;
 	transform: translate(-50%, -50%);
 	width: 50%;
-	font-size: 50px;
+	font-size: 65px;
 	text-align: left;
 }
 main > section#top > div > p{
@@ -65,16 +97,19 @@ main > section#top > div > p{
 	transform: translateX(-50%);
 	width: 50%;				
 	text-decoration: center;
+	font-size: 24px;
 }
 
 /*---------------------ここからヒストリーーーーーーーーーーーーーーーーーーーーーーーー*/
 main > section#history{
 	padding: 100px;
-	background-image: url(../img/tabi1.jpg);
+	background-color: #f4f8f8;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center center;
 	background-size: cover; 
+	font-size: 35px;
+	color: #38a2e0;
 }
 
 /*ーーーーーーーーーーーーーーーーーーここからコンテンツーーーーーーーーーーーーーーーーーーー*/
@@ -99,8 +134,7 @@ main > section#content > div{
 	display: flex;
 	width: 100%;
 	margin: 0 auto;
-	padding-top: 250px;
-	padding: 30px;	
+	padding-top: 250px;	
 	position: absolute;
 	top:50%;	
 	transform: translateY(-50%);
@@ -125,13 +159,13 @@ main > section#content > div > h3{
 	color: #fff;
 	text-align: center;
 	padding-top: 80px;
-	font-size: 40px;
+	font-size: 50px;
 }
 main > section#content > div > p{
 	color: #fff;
 	text-align: center;
 	padding: 50px;
-	font-size: 40px;
+	font-size: 25px;
 }
 
 .sample-box1{
@@ -172,13 +206,14 @@ main > section#content > div > p{
 /*ーーーーーーーーーーーここから問い合わせフォームーーーーーーーーーーーーーーーーーーーーーーー*/
 section#mailform{
 	height: 100%;
-	background-color: #e5e8e1;
+	background-color: #f4f8f8;
+	padding: 100px;
 
 }
 section#mailform > div {
 /*	background-image: url(../img/wakuwaku.jpg);*/
 	background-color: #e2e2e2;
-	color: #fff;
+	color: #38a2e0;
 	width: 100%;
 	padding: 100px;
 
@@ -188,6 +223,7 @@ section#mailform > div{
 	width: 800px;
 	display: flex;
 	margin: auto;
+	background-color: #f4f8f8;		
 }
 
 section#mailform > div >div{
@@ -277,23 +313,100 @@ input[type="submit"]{
 
 	section#mailform > div {
 	    flex-flow: column;
+	    width: 100%;
 	}
 	section#mailform > div >div {
 	    width: calc(80%);
 	    padding-left: 30px;
+	    margin: 0 auto;
 	}
 	.right > form > p > input {
 	    display: block;
-	    width: 120%;
+	    width: 100%;
 	    margin: 0 auto;
 	}
 	.right > form > p > textarea{
 		display: block;
-		width: 120%;
+		width: 100%;
 		margin: 0 auto;
 		height: 80px
 	}
-	
 }
+
+.tree{
+	display: flex;
+	flex-flow: column;
+	position: relative;
+}
+.tree::after{
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 100%;
+	background-color: #000;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.branch{
+	width: 50%;
+	margin: 0 auto;
+	padding: 40px 20px;
+	position: relative; 	
+}
+.branch:nth-of-type(odd){
+	margin-left: 0;
+}
+.branch:nth-of-type(odd)::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: blue;
+	z-index: 9999;
+}
+.branch:nth-of-type(even){
+	margin-right: 0;
+}
+.branch:nth-of-type(even)::before{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: -5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: blue;
+	z-index: 9999;
+}
+.branch:last-child::after{
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: -5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: blue;
+	z-index: 9999;	
+}
+.branch:nth-of-type(odd) *{
+	text-align: right;
+}
+.branch:nth-of-type(even) *{
+	text-align: left;
+}
+.branch h2{
+	font-size: 30px;
+	letter-spacing: .3em;
+}
+.branch p{
+	font-size: 20px;
+	letter-spacing: .1em;
+}
+
 
 

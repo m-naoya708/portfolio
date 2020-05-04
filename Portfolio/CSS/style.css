@@ -55,7 +55,7 @@ nav > ul > li > a:hover{
 	color: #00D646;
 }
 
-}
+
 main{
 	width: 100%;
 }
@@ -192,7 +192,7 @@ section#history.active .branch:nth-of-type(even){
  content: "";
  position: absolute;
  bottom: 0;
- right: -5px;
+ left: -5px;
  width: 10px;
  height: 10px;
  border-radius: 50%;
@@ -250,6 +250,7 @@ main > section#content > div{
 	width: 100%;
 	margin: 0 auto;
 	padding-top: 250px;	
+	padding: 30px
 	position: absolute;
 	top:50%;	
 	transform: translateY(-50%);
@@ -284,7 +285,9 @@ main > section#content > div > p{
 }
 
 .sample-box1{
-	color: #fff;	
+	display: block;
+	color: #fff;
+	width: 300px;	
 	height:300px;
 	background:blue;
 	border:1px solid #a7e;
@@ -300,7 +303,7 @@ main > section#content > div > p{
 	height:300px;
 	background:blue;
 	border:1px solid #a7e;
-	background-image: url(../img/portfolio1.jpg);
+	background-image: url(../img/portfolio4.jpg);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
@@ -323,6 +326,7 @@ section#mailform{
 	height: 100%;
 	background-color: #f4f8f8;
 	padding: 100px;
+	width: 100%;
 
 }
 section#mailform > div {

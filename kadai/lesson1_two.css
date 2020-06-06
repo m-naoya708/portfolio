@@ -1,0 +1,103 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}	
+h1{
+	text-align: left;
+}
+ul,li{
+	display: flex;
+	float: right;
+}
+a{
+	text-decoration: none;
+}
+section {
+	width: 100%;
+}
+
+/*-----------------contents_one----------------------------*/
+
+section > div{
+	width: 1000px;
+	margin: 0 auto;
+}
+section > div > div{
+	width: 100%;
+	display: flex;
+}
+section > div > div > div:first-child{
+	width: 70%;
+}
+.section h2{
+	position: fixed:
+	z-index: 1; 
+	z-index: 2;
+}
+
+#menu{
+	width:600px;
+	height: 45px;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	background-color: red;
+}
+#menu li{
+	width: 20%;
+	float: left;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: #fff;
+
+}
+#menu li a{
+	width: auto;
+	font-size: 14px;
+	font-weight: bold;
+	margin: 0;
+	padding: 12px 0;
+	text-decoration: none;
+	display: block;
+}
+#menu li a:hover{
+	background-color: #ffa443;
+}
+
+#test{
+	width:600px;
+	height: 45px;
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+	background-color:  #196349;
+}
+
+section > div > div > div:first-child > h2{
+	
+}
+section > div > div > div:first-child > p{
+
+}
+section > div > div > div:first-child > a{
+	
+}
+
+section > div > div > div:last-child{
+	width: 30%;
+}
+
+/*-----------------contents_two----------------------------*/
+
+
+
+/*-----------------contents_three----------------------------*/
+
+
+
+/*-----------------contents_Four----------------------------*/
+

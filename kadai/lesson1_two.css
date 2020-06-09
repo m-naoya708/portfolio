@@ -9,19 +9,113 @@ h1{
 	text-align: left;
 }
 ul,li{
-	display: flex;
-	float: right;
+	list-style: none; 
 }
 a{
 	text-decoration: none;
 }
-section {
+html, body{
 	width: 100%;
 }
+/*Heder*/
+header{
+	width: 100%;
+	display: flex;
+	flex-flow: column;
+	/*height: 50px;*/
+}
+header > div{
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+}
+header > nav{
+	width: 100%;
+	background-color: #c70e00;
+}
+header > nav > ul{
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+}
+header > nav > ul > li{
+	width: calc(100% / 6);
+	border-right: 1px solid #fff;
+}
+header > nav > ul > li:first-child{
+	border-left: 1px solid #fff;
+}
+header > nav > ul > li > a{
+	height: 50px;
+	line-height: 50px;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 100%;
+	background-color: #ea1000;
+}
+ 
+/* MAIN */
+main, section{
+	width: 100%;
+}
+section#top{
+	overflow: hidden;
+	background-color: #fde7e7;
+}
+section#top > div{
+	width: 1000px;
+	margin: 0 auto;
+	padding: 5vw 0;
+	position: relative;
+}
 
+.blackboard{
+	display: block;
+	position: relative;
+	margin: 0 auto;
+	width: 85%;
+}
+.mvtitle, .chara1, .chara2, .chara3{
+	position: absolute;
+}
+.mvtitle{
+	/*大きさ*/
+	width: 70%;
+
+	/*位置*/
+	top: calc(6vw + 45px);
+	left: 50%;
+	/*
+	right: ;
+	bottom: ;
+	*/
+	transform: translateX(-50%);
+}
+
+.chara1{
+	width: 30%;
+	bottom: -5vw;
+	left: -10vw;
+}
+.chara2{
+	width: 30%;
+	bottom: -5vw;
+	left: -3vw;
+}
+.chara3{
+	width: 30%;
+	bottom: -5vw;
+	right: -12vw;
+}
+/*section {
+	width: 100%;
+}
+*/
 /*-----------------contents_one----------------------------*/
 
-section > div{
+/*section > div{
 	width: 1000px;
 	margin: 0 auto;
 }
@@ -37,16 +131,16 @@ section > div > div > div:first-child{
 	z-index: 1; 
 	z-index: 2;
 }
-
-#menu{
+*/
+/*#menu{
 	width:600px;
 	height: 45px;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 	background-color: red;
-}
-#menu li{
+}*/
+/*#menu li{
 	width: 20%;
 	float: left;
 	padding: 0;
@@ -67,15 +161,15 @@ section > div > div > div:first-child{
 #menu li a:hover{
 	background-color: #ffa443;
 }
-
-#test{
+*/
+/*#test{
 	width:600px;
 	height: 45px;
 	padding: 0;
 	margin: 0;
 	list-style-type: none;
 	background-color:  #196349;
-}
+}*/
 
 section > div > div > div:first-child > h2{
 	

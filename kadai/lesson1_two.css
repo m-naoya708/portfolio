@@ -109,6 +109,63 @@ section#top > div{
 	bottom: -5vw;
 	right: -12vw;
 }
+#test{
+	width: 1000px;
+	margin: 0 auto;
+	display: flex;
+}
+
+#test > li {
+	width: calc(100% / 5);
+/*	border-right: 1px solid #fff;*/
+}
+
+#test > li > a{
+	height: 80px;
+	line-height: 80px;
+	color: #fff;
+	text-align: center;
+	display: block;
+	width: 100%;
+	background-color: #194369;
+}
+.nav_blue{
+	width: 100%;
+	background-color: #194369;
+}
+section{
+	padding: 40px 50px 30px;
+	background-color: #F2F2F2;
+}
+h3{
+	font-size: 32px;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	width: 1000px;
+	text-align: left;
+	letter-spacing: 0.1em;
+	color: #194369;
+}
+dd{
+	width: 140px;
+}
+dt{
+	width: 772px;
+}
+dl{
+	width: 912px;
+	display: flex;
+	padding: 18px 0;
+	border-bottom: 1px dashed #CBCBCB;
+}
+.scroll{
+	width: 1000px;
+	height: 166px;
+	margin: 0 auto;
+	background-color: #ffffff;
+	overflow-y: scroll;
+}
+
 /*section {
 	width: 100%;
 }

@@ -166,6 +166,37 @@ dl{
 	overflow-y: scroll;
 }
 
+#contents_1{
+	padding: 1px 50px;
+	background: linear-gradient(147.5deg, #BFEEFB, #97D5F9);
+}
+#contents_1 > div{
+	margin-top: 110px;
+    margin-bottom: 110px;
+    background: linear-gradient(90deg, #25b2f6, #3969e0);
+    padding: 15px;
+    max-width: 1000px;
+    margin: 110px auto 70px;
+}
+#contents_1 > div > div{
+	width: 100%;
+    padding-left: 65px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 400px;
+    background: linear-gradient(147.5deg, #BFEEFB, #97D5F9);
+}   
+#contents_1 h3{
+	width: 100%;
+}
+#contents_1 p{
+	margin: 10px 0 0;
+    padding-right: 33%;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
 /*section {
 	width: 100%;
 }

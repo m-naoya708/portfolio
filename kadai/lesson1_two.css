@@ -146,13 +146,13 @@ h3{
 	letter-spacing: 0.1em;
 	color: #194369;
 }
-dd{
+.scroll dd{
 	width: 140px;
 }
-dt{
+.scroll dt{
 	width: 772px;
 }
-dl{
+.scroll dl{
 	width: 912px;
 	display: flex;
 	padding: 18px 0;
@@ -209,6 +209,7 @@ dl{
     width: 100%;
     max-width: 800px;
     padding: 15px 0 25px;
+    z-index: 1;
 }
 #contents_1 li{
 	width: 50%;
@@ -259,7 +260,7 @@ dl{
     transform: translate(0, 0);
     align-self: flex-end;
     position: absolute;
-    z-index: 1;
+    z-index: 0;
  }
 
  /*コンテンツ２*/
@@ -306,9 +307,10 @@ dl{
     width: 100%;
     max-width: 800px;
     padding: 15px 0 25px;
+    z-index: 1;
 }
 #contents_2 li{
-	width: 50%;
+	width: calc(100% / 3);
     max-width: 290px;
     min-height: 100px;
     padding-right: 20px;
@@ -336,7 +338,7 @@ dl{
 	top: -7px;
 	width: 45px;
 	height: 45px;
-	background: linear-gradient(90deg, #25b2f6, #3969e0);
+	background: linear-gradient(90deg, #fab800, #fa6f00);
 	border-radius: 50%;
 	border: 1px solid #fff;
 	font-size: 22px;
@@ -347,17 +349,6 @@ dl{
 #contents_2 a span:last-child{
 	text-align: left;
 }
-.chara{
-	top: inherit;
-    bottom: 0;
-    right: 0;
-    width: 300px;
-    max-width: inherit;
-    transform: translate(0, 0);
-    align-self: flex-end;
-    position: absolute;
-    z-index: 1;
-}
 
 /*コンテンツ３*/
 #contents_3{
@@ -367,7 +358,7 @@ dl{
 #contents_3 > div{
 	margin-top: 110px;
     margin-bottom: 110px;
-    background: linear-gradient(147.5deg, #FCDADF, #FAB9C4);
+    background: linear-gradient(90deg, #ff798a, #ff3f57);
     padding: 15px;
     max-width: 1000px;
     margin: 110px auto 70px;
@@ -384,7 +375,8 @@ dl{
 #contents_3 h3{
 	width: 100%;
 	margin-top: -90px;
-	margin-left: -110px; linear-gradient(147.5deg, #FAFA90, #F8DC82);
+	margin-left: -110px; 
+/*	background: linear-gradient(147.5deg, #FAFA90, #F8DC82);*/
 	position: relative;
 	display: inline-block;
 }
@@ -403,9 +395,10 @@ dl{
     width: 100%;
     max-width: 800px;
     padding: 15px 0 25px;
+    z-index: 1;
 }
 #contents_3 li{
-	width: 50%;
+	width: calc(100% / 3);
     max-width: 290px;
     min-height: 100px;
     padding-right: 20px;
@@ -433,7 +426,7 @@ dl{
 	top: -7px;
 	width: 45px;
 	height: 45px;
-	background: linear-gradient(90deg, #25b2f6, #3969e0);
+	background: linear-gradient(90deg, #ff798a, #ff3f57);
 	border-radius: 50%;
 	border: 1px solid #fff;
 	font-size: 22px;
@@ -443,17 +436,6 @@ dl{
 }
 #contents_3 a span:last-child{
 	text-align: left;
-}
-.chara{
-	top: inherit;
-    bottom: 0;
-    right: 0;
-    width: 300px;
-    max-width: inherit;
-    transform: translate(0, 0);
-    align-self: flex-end;
-    position: absolute;
-    z-index: 1;
 }
 
 /*コンテンツ４*/
@@ -478,10 +460,37 @@ dl{
     min-height: 400px;
     background: linear-gradient(147.5deg, #dbf2c9, #b8ea98);
 }   
+.news{
+	width: 560px;
+	height: 282px;
+	background-color: #ffffff;
+	overflow-y: scroll;
+	padding: 30px 30px 10px;
+}
+.news h4{
+	font-size: 20px;
+    margin-bottom: 5px;
+}
+.news a{
+	padding: 15px 0;
+	display: block;
+	border-bottom: 1px dashed #CBCBCB;
+	text-decoration: none;
+}
+.news dl{
+
+}
+.news dt{
+	font-size: 14.4px;
+}
+.news dd{
+	font-size: 14.4px;
+}
+
 #contents_4 h3{
 	width: 100%;
 	margin-top: -90px;
-	margin-left: -110px; linear-gradient(147.5deg, #FAFA90, #F8DC82);
+	margin-left: -110px; 
 	position: relative;
 	display: inline-block;
 }
@@ -500,6 +509,7 @@ dl{
     width: 100%;
     max-width: 800px;
     padding: 15px 0 25px;
+    z-index: 1;
 }
 #contents_4 li{
 	width: 50%;
@@ -530,7 +540,7 @@ dl{
 	top: -7px;
 	width: 45px;
 	height: 45px;
-	background: linear-gradient(90deg, #25b2f6, #3969e0);
+	background: linear-gradient(90deg, #78dd37, #55c40c);
 	border-radius: 50%;
 	border: 1px solid #fff;
 	font-size: 22px;
@@ -541,17 +551,7 @@ dl{
 #contents_4 a span:last-child{
 	text-align: left;
 }
-.chara{
-	top: inherit;
-    bottom: 0;
-    right: 0;
-    width: 300px;
-    max-width: inherit;
-    transform: translate(0, 0);
-    align-self: flex-end;
-    position: absolute;
-    z-index: 1;
-}
+
 /*section {
 	width: 100%;
 }

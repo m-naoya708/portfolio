@@ -189,14 +189,369 @@ dl{
 }   
 #contents_1 h3{
 	width: 100%;
+	margin-top: -90px;
+	margin-left: -110px;
+	position: relative;
+	display: inline-block;
 }
 #contents_1 p{
 	margin: 10px 0 0;
     padding-right: 33%;
-    font-size: 1.5rem;
+    font-size: 15px;
     line-height: 1.8;
+    text-align: left;
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", "MS PGothic", sans-serif;
 }
 
+#contents_1 ul{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px 0 25px;
+}
+#contents_1 li{
+	width: 50%;
+    max-width: 290px;
+    min-height: 100px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+#contents_1 a{
+	display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 25px 10px 25px 45px;
+    font-size: 17px;
+    line-height: 1.5;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(25,67,105,0.2);
+	position: relative;
+	background-color: #fff;
+	font-weight: bold;
+	z-index: 1;
+	color: #194369;
+    text-decoration: none;
+}
+#contents_1 a span:first-child{
+	position: absolute;
+	left: -12.5px;
+	top: -7px;
+	width: 45px;
+	height: 45px;
+	background: linear-gradient(90deg, #25b2f6, #3969e0);
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 45px;
+}
+#contents_1 a span:last-child{
+	text-align: left;
+}
+.chara{
+	top: inherit;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    max-width: inherit;
+    transform: translate(0, 0);
+    align-self: flex-end;
+    position: absolute;
+    z-index: 1;
+ }
+
+ /*コンテンツ２*/
+#contents_2{
+	padding: 1px 50px;
+	background: linear-gradient(147.5deg, #FAFA90, #F8DC82);
+}
+#contents_2 > div{
+	margin-top: 110px;
+    margin-bottom: 110px;
+    background: linear-gradient(90deg, #25b2f6, #3969e0);
+    padding: 15px;
+    max-width: 1000px;
+    margin: 110px auto 70px;
+}
+#contents_2 > div > div{
+	width: 100%;
+    padding-left: 65px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 400px;
+    background: linear-gradient(147.5deg, #FAFA90, #F8DC82);
+}   
+#contents_2 h3{
+	width: 100%;
+	margin-top: -90px;
+	margin-left: -110px; linear-gradient(147.5deg, #FAFA90, #F8DC82);
+	position: relative;
+	display: inline-block;
+}
+#contents_2 p{
+	margin: 10px 0 0;
+    padding-right: 33%;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", "MS PGothic", sans-serif;
+}
+
+#contents_2 ul{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px 0 25px;
+}
+#contents_2 li{
+	width: 50%;
+    max-width: 290px;
+    min-height: 100px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+#contents_2 a{
+	display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 25px 10px 25px 45px;
+    font-size: 17px;
+    line-height: 1.5;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(25,67,105,0.2);
+	position: relative;
+	background-color: #fff;
+	font-weight: bold;
+	z-index: 1;
+	color: #194369;
+    text-decoration: none;
+}
+#contents_2 a span:first-child{
+	position: absolute;
+	left: -12.5px;
+	top: -7px;
+	width: 45px;
+	height: 45px;
+	background: linear-gradient(90deg, #25b2f6, #3969e0);
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 45px;
+}
+#contents_2 a span:last-child{
+	text-align: left;
+}
+.chara{
+	top: inherit;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    max-width: inherit;
+    transform: translate(0, 0);
+    align-self: flex-end;
+    position: absolute;
+    z-index: 1;
+}
+
+/*コンテンツ３*/
+#contents_3{
+	padding: 1px 50px;
+	background: linear-gradient(147.5deg, #FCDADF, #FAB9C4);
+}
+#contents_3 > div{
+	margin-top: 110px;
+    margin-bottom: 110px;
+    background: linear-gradient(90deg, #25b2f6, #3969e0);
+    padding: 15px;
+    max-width: 1000px;
+    margin: 110px auto 70px;
+}
+#contents_3 > div > div{
+	width: 100%;
+    padding-left: 65px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 400px;
+    background: linear-gradient(147.5deg, #FCDADF, #FAB9C4);
+}   
+#contents_3 h3{
+	width: 100%;
+	margin-top: -90px;
+	margin-left: -110px; linear-gradient(147.5deg, #FAFA90, #F8DC82);
+	position: relative;
+	display: inline-block;
+}
+#contents_3 p{
+	margin: 10px 0 0;
+    padding-right: 33%;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", "MS PGothic", sans-serif;
+}
+
+#contents_3 ul{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px 0 25px;
+}
+#contents_3 li{
+	width: 50%;
+    max-width: 290px;
+    min-height: 100px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+#contents_3 a{
+	display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 25px 10px 25px 45px;
+    font-size: 17px;
+    line-height: 1.5;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(25,67,105,0.2);
+	position: relative;
+	background-color: #fff;
+	font-weight: bold;
+	z-index: 1;
+	color: #194369;
+    text-decoration: none;
+}
+#contents_3 a span:first-child{
+	position: absolute;
+	left: -12.5px;
+	top: -7px;
+	width: 45px;
+	height: 45px;
+	background: linear-gradient(90deg, #25b2f6, #3969e0);
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 45px;
+}
+#contents_3 a span:last-child{
+	text-align: left;
+}
+.chara{
+	top: inherit;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    max-width: inherit;
+    transform: translate(0, 0);
+    align-self: flex-end;
+    position: absolute;
+    z-index: 1;
+}
+
+/*コンテンツ４*/
+#contents_4{
+	padding: 1px 50px;
+	background: linear-gradient(147.5deg, #dbf2c9, #b8ea98);
+}
+#contents_4 > div{
+	margin-top: 110px;
+    margin-bottom: 110px;
+    background: linear-gradient(90deg, #25b2f6, #3969e0);
+    padding: 15px;
+    max-width: 1000px;
+    margin: 110px auto 70px;
+}
+#contents_4 > div > div{
+	width: 100%;
+    padding-left: 65px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    min-height: 400px;
+    background: linear-gradient(147.5deg, #dbf2c9, #b8ea98);
+}   
+#contents_4 h3{
+	width: 100%;
+	margin-top: -90px;
+	margin-left: -110px; linear-gradient(147.5deg, #FAFA90, #F8DC82);
+	position: relative;
+	display: inline-block;
+}
+#contents_4 p{
+	margin: 10px 0 0;
+    padding-right: 33%;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: left;
+    font-family: "Hiragino Kaku Gothic ProN", "Meiryo", "MS PGothic", sans-serif;
+}
+
+#contents_4 ul{
+	display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 800px;
+    padding: 15px 0 25px;
+}
+#contents_4 li{
+	width: 50%;
+    max-width: 290px;
+    min-height: 100px;
+    padding-right: 20px;
+    margin-top: 20px;
+}
+#contents_4 a{
+	display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 25px 10px 25px 45px;
+    font-size: 17px;
+    line-height: 1.5;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(25,67,105,0.2);
+	position: relative;
+	background-color: #fff;
+	font-weight: bold;
+	z-index: 1;
+	color: #194369;
+    text-decoration: none;
+}
+#contents_4 a span:first-child{
+	position: absolute;
+	left: -12.5px;
+	top: -7px;
+	width: 45px;
+	height: 45px;
+	background: linear-gradient(90deg, #25b2f6, #3969e0);
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-size: 22px;
+	font-weight: bold;
+	color: #fff;
+	line-height: 45px;
+}
+#contents_4 a span:last-child{
+	text-align: left;
+}
+.chara{
+	top: inherit;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    max-width: inherit;
+    transform: translate(0, 0);
+    align-self: flex-end;
+    position: absolute;
+    z-index: 1;
+}
 /*section {
 	width: 100%;
 }

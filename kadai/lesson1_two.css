@@ -551,6 +551,40 @@ h3{
 	text-align: left;
 }
 
+#contents_5{
+	background-color: #fff;
+}
+#contents_5 > div{
+	margin-top: 20px;
+}
+#contents_5 > div > div > ul{
+	width: 1000px;
+	margin: 90px auto;
+	display: flex;
+}
+#contents_5 > div > div > ul > li{
+	width: calc(100% / 3);
+	border-right: 1px solid #194369;
+}
+#contents_5 > div > div > ul > li:first-child{
+	border-left: 1px solid #194369;
+}
+#contents_5 > div > div > ul > li > img{
+	width: 174px;
+    height: 174px;
+    padding-top: 30px;
+	border-radius: 50%;
+    background-color: #f2f2f2;
+}
+#contents_5 > div > div > ul > li > p{
+	height: auto;
+	margin-top: 10px;
+	font-size: 18px;
+	font-weight: bold;
+	color: #194369;
+}
+
+
 /*section {
 	width: 100%;
 }

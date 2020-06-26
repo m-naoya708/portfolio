@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="50px" height="50px" viewBox="0 0 50 50" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Design icon top 50x50</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-icon-top-50x50" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="btn_bound" fill-opacity="0.5" fill="#FF00FF" opacity="0" x="0" y="0" width="36" height="36"></rect>
+        <g id="Top-button" fill-rule="nonzero">
+            <path d="M25,50 C11.1458333,50 0,38.8541667 0,25 C0,11.1458333 11.1458333,0 25,0 C38.8541667,0 50,11.1458333 50,25 C50,38.8541667 38.8541667,50 25,50 Z" id="Shape" fill="#007236"></path>
+            <polygon id="Shape" fill="#FFFFFF" points="38 25.5 25.5 13 13 25.5 15.2916667 27.6875 23.9375 18.9375 23.9375 38 27.0625 38 27.0625 18.9375 35.8125 27.6875"></polygon>
+        </g>
+    </g>
+</svg>

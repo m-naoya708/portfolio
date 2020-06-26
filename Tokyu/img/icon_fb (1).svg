@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="36px" height="36px" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Design icon sns_fb 36x36</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-icon-sns_fb-36x36" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="btn_bound" fill-opacity="0.5" fill="#FF00FF" opacity="0" x="0" y="0" width="36" height="36"></rect>
+        <path d="M18,36 C8.0588745,36 0,27.9411255 0,18 C0,8.0588745 8.0588745,0 18,0 C27.9411255,0 36,8.0588745 36,18 C36,27.9411255 27.9411255,36 18,36 Z M19.5402844,27.2819608 L19.5402844,18.4958456 L22.478673,18.4958456 L22.9052133,15.0763846 L19.492891,15.0763846 L19.492891,12.891729 C19.492891,11.8943862 19.7772512,11.229491 21.1990521,11.229491 L23,11.229491 L23,8.14247754 C22.6682464,8.09498503 21.6255924,8 20.3459716,8 C17.7393365,8 15.9383886,9.61474548 15.9383886,12.5592814 L15.9383886,15.0763846 L13,15.0763846 L13,18.4958456 L15.9383886,18.4958456 L15.9383886,27.2819608 L19.5402844,27.2819608 Z" id="Facebook" fill="#000000" fill-rule="nonzero"></path>
+    </g>
+</svg>

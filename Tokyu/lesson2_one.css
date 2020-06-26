@@ -1,0 +1,14 @@
+@charset "UTF-8";
+*{
+	box-sizing: border-box;
+	text-align: center;
+	margin: 0;
+	padding: 0;
+}
+section#top{
+	padding-top: 80px;
+	background-color: green;
+}
+.top > div{
+	width: 85%;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.2 (67145) - http://www.bohemiancoding.com/sketch -->
+    <title>Design icon close 24x24</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Design-icon-close-24x24" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect id="btn-bound" fill-opacity="0.5" fill="#FF00FF" opacity="0" x="0" y="0" width="24" height="24"></rect>
+        <path d="M12,10.5857864 L18.3622204,4.22356607 C18.753706,3.83208044 19.3849276,3.82857845 19.7781746,4.22182541 C20.1686989,4.6123497 20.1745374,5.23967616 19.7764339,5.63777963 L13.4142136,12 L19.7764339,18.3622204 C20.1679196,18.753706 20.1714215,19.3849276 19.7781746,19.7781746 C19.3876503,20.1686989 18.7603238,20.1745374 18.3622204,19.7764339 L12,13.4142136 L5.63777963,19.7764339 C5.246294,20.1679196 4.61507236,20.1714215 4.22182541,19.7781746 C3.83130112,19.3876503 3.8254626,18.7603238 4.22356607,18.3622204 L10.5857864,12 L4.22356607,5.63777963 C3.83208044,5.246294 3.82857845,4.61507236 4.22182541,4.22182541 C4.6123497,3.83130112 5.23967616,3.8254626 5.63777963,4.22356607 L12,10.5857864 Z" id="Combined-Shape" fill="#007236" fill-rule="nonzero"></path>
+    </g>
+</svg>

@@ -3,30 +3,35 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
-	background-color: #67AF28;
-/*【質問１】　*{　に対して、背景色 #67AF28を入れてもよいでしょうか？*/
 }
 ul, li{
 	list-style: none;
 }
+body{
+	background-color: #67AF28;
+}
 section#top{
 	overflow: hidden;
-    padding-top: 80px;
+	padding-top: 80px;
 }
 
-#top > div{
+.top_row{
 	max-width: 960px;
-	width: 70%;
 	margin: 0 auto;
+	display: flex;
+}
+.top_all{
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
 }
 .top_left{
-	width: 56.25%;
+	width: 100%;
 }
 #top img{
 	max-width: 100%;
-    height: auto;
-    border: none;
-    vertical-align: bottom;
+	height: auto;
+	border: none;
+	vertical-align: bottom;
 }
 .benri{
 	margin-bottom: 50px;
@@ -36,43 +41,53 @@ section#top{
 }
 .download{
 	display: block;
-    margin: 0 auto 15px;
+	margin: 0 auto 15px;
 }
 .nav_top_app > ul{
 	display: flex;
+	padding: 0 4%;
+}
+.nav_top_app > ul > li{
+	margin-right: 4%;
+	width: 46%;
 }
 .nav_top_app > ul > li > a{
 	text-align: center;
-/*    padding: 0 4%;*/
-    width: 89%;
- /*【結果】メインサイトはwidth46%だが、ビジュアルを近づけるためwidth89%に変更、paddingもコメントアウトしました。
- 　【質問２】width46%のままGoogleアイコンを隣と合わせる方法があれば知りたいです*/
-    margin-right: 4%;
+	width: 100%;
 }
 .nav_top_app > ul > li:last-child > a{
 	margin-right: 0;
 	display: inline-block;
-	/*【質問３】display: inlineだけでも大丈夫か。Apple・Googleのアイコンのみなのでblock要素は必要ないですか？*/
 }
-.top_right{
+.top_right　> img{
 /*【質問４】スマホと人が動く画像の大きさを調整したいです。.top_rightに対して889×569pxを入れてみましたが、小さく表示されてしまいます*/
 	position: absolute;
-    top: -15px;
-    left: 56.25%;
-    width: 92.7%;
+	top: -15px;
+	left: 56.25%;
+	width: 92.7%;
 }
 .top_right > img{
 	height: 889px;
-	width: 569px;
+	width: 100%
 }
 /*YOUTUBEコンテンツ欄*/
 section#video{
 	margin-top: 80px;
-    text-align: center;
+	text-align: center;
 }
-#video > div > div > div{
-/*【質問５】Youtubeの画像を大きく表示するにはどうしたらよいでしょうか*/
-	width: 100%;
-    height: 100%;
-	padding: 0 0.75rem;
+.youtube_1 > iframe{
+	width: 845px;
+    height: 475px;
+    left: 0px;
+    top: 0px;
+}
+.main_header{
+	margin-top: 115px;
+	text-align: center;
+}
+.box_sec01{
+	background-color: #fff;
+}
+.il{
+	width: 503px;
 }

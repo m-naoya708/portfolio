@@ -18,7 +18,8 @@ section#top{
 .top_row{
 	max-width: 960px;
 	margin: 0 auto;
-	display: flex;
+	position: relative;
+    overflow: visible;
 }
 .top_all{
 	margin-left: -0.75rem;
@@ -59,7 +60,7 @@ section#top{
 	margin-right: 0;
 	display: inline-block;
 }
-.top_right　> img{
+.top_right{
 /*【質問４】スマホと人が動く画像の大きさを調整したいです。.top_rightに対して889×569pxを入れてみましたが、小さく表示されてしまいます*/
 	position: absolute;
 	top: -15px;
@@ -87,6 +88,8 @@ section#video{
 }
 .box_sec01{
 	background-color: #fff;
+	width: 960px;
+    margin: 0 auto;
 }
 .il{
 	width: 503px;

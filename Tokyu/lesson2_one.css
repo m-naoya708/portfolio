@@ -24,6 +24,8 @@ section#top{
 .top_all{
 	margin-left: -0.75rem;
 	margin-right: -0.75rem;
+	width: 100%;
+	padding: 0 0.75rem;
 }
 .top_left{
 	width: 56.25%;
@@ -90,7 +92,11 @@ section#video{
 	background-color: #fff;
 	width: 960px;
     margin: 0 auto;
+    padding: 40px 10.4% 40px;
 }
 .il{
 	width: 503px;
+}
+.num01{
+	margin-bottom: -73px;
 }

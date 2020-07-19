@@ -63,7 +63,6 @@ section#top{
 	display: inline-block;
 }
 .top_right{
-/*【質問４】スマホと人が動く画像の大きさを調整したいです。.top_rightに対して889×569pxを入れてみましたが、小さく表示されてしまいます*/
 	position: absolute;
 	top: -15px;
 	left: 56.25%;
@@ -128,15 +127,30 @@ section#video > div{
 }
 }
 .num02{
-	margin-bottom: -73px;
+	
 }
 .box_sec02 h4{
 	margin-bottom: 30px;
 }
-
 .il_area{
 	margin-left: -7px;
     margin-right: -7px;
     display: flex;
-    width: calc(100% / 5);
+    justify-content: space-between;
+    align-items: baseline;
+    width: calc(100% + 14px);
 }
+.il_area > div{
+	width: calc(100% / 5);
+}
+.il_area > div > img{
+	max-width: 95%;
+	display: block;
+	margin: 0 auto;
+}
+.il_area > div > p{
+	width: 80%;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+

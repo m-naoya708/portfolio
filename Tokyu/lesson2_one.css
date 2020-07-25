@@ -20,6 +20,7 @@ section#top{
 	margin: 0 auto;
 	position: relative;
     overflow: visible;
+    text-align: center;
 }
 .top_all{
 	margin-left: -0.75rem;
@@ -200,8 +201,22 @@ section#video > div{
 .right_side > img{
 	width: 100%;
 }
-
-
+.gr-area2{
+	margin-top: 35px;
+}
+.sec3_tab2{
+	display: flex;
+    padding: 40px;
+    background: #d9ebc9;
+}
+.gr-area3{
+	margin-top: 35px;
+}
+.sec3_tab3{
+	display: flex;
+    padding: 40px;
+    background: #d9ebc9;
+}
 .arw{
 	margin: 30px auto;
 	display: block;
@@ -213,4 +228,38 @@ section#video > div{
 .check_area > img{
 	margin: 0 auto 20px;
 	display: block;
+}
+.check_area > ul{
+	padding-left: 50px;
+}
+.check_area > ul > li{
+	padding-left: 40px;
+	position: relative;
+	margin-bottom: 20px;
+	font-weight: bolder;
+}
+.check_area > ul > li::before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	border: 2px solid #000;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+}
+.check_area > ul > li::after{
+	content: "";
+	width: 6px;
+	height: 20px;
+	border-bottom: 3px solid #097637;
+	border-right: 3px solid #097637;
+	position: absolute;
+	top: calc(50% - 3px);
+	left: 10px;
+	transform: translateY(-50%) rotate(45deg);
+}
+.check_area > ul > li > p{
+	font-size: 20px;
+    font-weight: bold;
 }

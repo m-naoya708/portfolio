@@ -168,21 +168,23 @@ section#video > div{
 	margin-top: 40px;
 	margin-bottom: -73px;
 }
-.gr-area{
-	padding: 40px;
+.gr-area1{
     background-size: 100% 100%;
     background-repeat: no-repeat;
     text-align: left;
     margin-top: 35px;
 }
+.sec3_tab1{
+	display: flex;
+    padding: 40px;
+    background: #d9ebc9;
+}
 .left_side{
-	float: left;
     width: 50%;
 }
 .left_side h4{
 	color: #007130;
     font-size: 24px;
-    text-align: left;
     margin-bottom: 15px;
     line-height: 1.3;
     letter-spacing: 0.02em;
@@ -191,4 +193,24 @@ section#video > div{
 .left_side p{
 	font-size: 17px;
     line-height: 1.5;
+}
+.right_side{
+	width: 50%;
+}
+.right_side > img{
+	width: 100%;
+}
+
+
+.arw{
+	margin: 30px auto;
+	display: block;
+}
+.check_area{
+	border: 2.5px solid #097637;
+	padding: 25px 15px 10px;
+}
+.check_area > img{
+	margin: 0 auto 20px;
+	display: block;
 }

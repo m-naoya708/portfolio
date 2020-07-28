@@ -14,13 +14,12 @@ section#top{
 	overflow: hidden;
 	padding-top: 80px;
 }
-
 .top_row{
 	max-width: 960px;
 	margin: 0 auto;
 	position: relative;
-    overflow: visible;
-    text-align: center;
+	overflow: visible;
+	text-align: center;
 }
 .top_all{
 	margin-left: -0.75rem;
@@ -28,7 +27,7 @@ section#top{
 	width: 100%;
 	padding: 0 0.75rem;
 }
-.top_left{
+.top_left	{
 	width: 56.25%;
 }
 #top img{
@@ -71,7 +70,7 @@ section#top{
 }
 .top_right > img{
 	height: 889px;
-	width: 100%
+	width: 100%;
 }
 /*YOUTUBEコンテンツ欄*/
 section#video{
@@ -104,8 +103,8 @@ section#video > div{
 .box_sec01{
 	background-color: #fff;
 	width: 960px;
-    margin: 0 auto;
-    padding: 40px 10.4% 40px;
+ 	margin: 0 auto;
+	padding: 40px 6.8% 40px;
 }
 .il{
 	width: 503px;
@@ -120,12 +119,13 @@ section#video > div{
 	text-align: left;
 	margin-bottom: 30px;
 	margin-top: 21px;
+	font-size: 17px;
 }
 .box_sec02{
 	background-color: #fff;
 	width: 960px;
-    margin: 0 auto;
-    padding: 40px 10.4% 40px;
+	margin: 0 auto;
+	padding: 40px 6.8% 40px;
 }
 .num02{
 	margin-top: 40px;
@@ -136,11 +136,11 @@ section#video > div{
 }
 .il_area{
 	margin-left: -7px;
-    margin-right: -7px;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    width: calc(100% + 14px);
+	margin-right: -7px;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+	width: calc(100% + 14px);
 }
 .il_area > div{
 	width: calc(100% / 5);
@@ -151,49 +151,49 @@ section#video > div{
 	margin: 0 auto;
 }
 .il_area > div > p{
-    width: 100%;
-    margin: 7px 0 0;
-    padding-top: 10px;
-    font-size: 15px;
-    letter-spacing: 0.06em;
-    font-weight: bold;
-    color: #007130;
+	width: 100%;
+	margin: 7px 0 0;
+	padding-top: 10px;
+	font-size: 15px;
+	letter-spacing: 0.06em;
+	font-weight: bold;
+	color: #007130;
 }
 .box_sec03{
 	background-color: #fff;
-    width: 960px;
-    margin: 0 auto;
-    padding: 40px 10.4% 40px;
+	width: 960px;
+	margin: 0 auto;
+	padding: 40px 6.8% 40px;　
 }
 .num03{
 	margin-top: 40px;
 	margin-bottom: -73px;
 }
 .gr-area1{
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    text-align: left;
-    margin-top: 35px;
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	text-align: left;
+	margin-top: 35px;
 }
 .sec3_tab1{
 	display: flex;
-    padding: 40px;
-    background: #d9ebc9;
+	padding: 40px;
+	background: #d9ebc9;
 }
 .left_side{
-    width: 50%;
+	width: 50%;
 }
 .left_side h4{
 	color: #007130;
-    font-size: 24px;
-    margin-bottom: 15px;
-    line-height: 1.3;
-    letter-spacing: 0.02em;
-    font-weight: bold;
+	font-size: 24px;
+	margin-bottom: 15px;
+	line-height: 1.3;
+	letter-spacing: 0.02em;
+	font-weight: bold;
 }
 .left_side p{
 	font-size: 17px;
-    line-height: 1.5;
+	line-height: 1.5;
 }
 .right_side{
 	width: 50%;
@@ -206,16 +206,16 @@ section#video > div{
 }
 .sec3_tab2{
 	display: flex;
-    padding: 40px;
-    background: #d9ebc9;
+	padding: 40px;
+	background: #d9ebc9;
 }
 .gr-area3{
 	margin-top: 35px;
 }
 .sec3_tab3{
 	display: flex;
-    padding: 40px;
-    background: #d9ebc9;
+	padding: 40px;
+	background: #d9ebc9;
 }
 .arw{
 	margin: 30px auto;
@@ -261,5 +261,87 @@ section#video > div{
 }
 .check_area > ul > li > p{
 	font-size: 20px;
-    font-weight: bold;
+	font-weight: bold;
+}
+.inner-contents03{
+	margin-top: 85px;
+}
+.box_sec04{
+	background: #d9ebc9;
+	width: 960px;
+	margin: 0 auto;
+	padding: 40px 6.8% 40px;
+}
+.box_sec04 h3{
+	margin: 0 0 30px;
+}
+.wt-area{
+	padding: 40px;
+	text-align: left;
+	background-color: #ffffff;
+	margin: 0 auto;
+}
+.r-wrapper{
+	margin-bottom: 30px;
+}
+.r-wrapper h4{
+	color: #007130;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+.r-wrapper p{
+	font-size: 17px;
+    line-height: 1.5;
+}
+.wt-area h4{
+	color: #007130;
+    font-size: 24px;
+    text-align: left;
+    margin-bottom: 15px;
+    line-height: 1.3;
+}
+.both_side{
+	display: flex;
+}
+.right-side{
+	padding-left: 20px;
+}
+.app_block{
+	margin: 80px 0 60px;
+}
+.row{
+	margin-left: -0.75rem;
+	margin-right: -0.75rem;
+}
+.col.s12{
+	width: 100%;
+}
+.download2{
+	display: block;
+	margin: 0 auto 15px;
+}
+.ios{
+	margin-right: -76%;
+	width: 229px;
+}
+.android{
+	width: 229px;
+	margin-left: -60%;
+}
+
+/*ーーーーーーーーーーーーーフッターコンテンツーーーーーーーーーーーーーー*/
+.footer_block{
+	padding: 40px 0 20px;
+	font-size: 15px;
+	color: #fff;
+	background-color: #007130;
+	text-decoration: underline;
+}
+.menu_all{
+	padding: 2% 0;
+	display: flex;
+	justify-content: space-evenly;
+	margin: 0 10px 25px;
 }

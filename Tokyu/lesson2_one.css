@@ -340,8 +340,34 @@ section#video > div{
 	text-decoration: underline;
 }
 .menu_all{
-	padding: 2% 0;
-	display: flex;
-	justify-content: space-evenly;
+/*	padding: 2% 0;
+*/	display: flex;
+	justify-content: center;
 	margin: 0 10px 25px;
+}
+.menu_all li{
+	margin: 0 15px;
+}
+.nav_top_sns > ul{
+	display: flex;
+	justify-content: center;
+	margin: 0 10px 25px;
+}
+.nav_top_sns > ul > li{
+	margin: 0 6px;
+}
+.nav_top_sns > ul > li > a{
+	display: block;
+	color: #fff;
+	text-decoration: none;
+	padding: 2px 7px;
+}
+.nav_top_sns > ul > li:nth-of-type(1) > a{
+	background-color: #3b5998;
+}
+.nav_top_sns > ul > li:nth-of-type(2) > a{
+	background-color: #00aced;
+}
+.nav_top_sns > ul > li:nth-of-type(3) > a{
+	background-color: #5ae628;
 }

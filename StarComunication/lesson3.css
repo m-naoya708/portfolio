@@ -7,6 +7,9 @@
 ul, li{
 	list-style: none;
 }
+body{
+	font-family:YakuHanJP,Noto Sans JP,Hiragino Kaku Gothic ProN,"メイリオ",Osaka,"ＭＳ Ｐゴシック",sans-serif;
+}
 .l-wrapper{
 	overflow: hidden;
 }
@@ -14,7 +17,7 @@ ul, li{
 .header-l-header{
 	animation: fadeIn 1s forwards;
 }
-.header{
+header{
 	position: absolute;	
 	top: 0;
 	left: 0;
@@ -40,7 +43,7 @@ ul, li{
 	display: flex;
     margin-top: 27px;
 }
-.heder-navi-list{
+.header-navi-list{
 	display: flex;
 	width: 674px;
 	margin-right: 30px;
@@ -63,6 +66,7 @@ ul, li{
 	opacity: 1!important;
 /*    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";*/
     padding-bottom: 5px;
+    text-decoration: none;
 }
 /*__________________________ここまでがnav要素&ヘッダー部分＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
 
@@ -117,9 +121,10 @@ ul, li{
 	margin-bottom: 45px;
 	line-height: 2;
 }
+
 .button, .button_small{
 	display: -ms-inline-flexbox;
-/*	display: inline-flex;*/
+	display: inline-flex;
 	-ms-flex-pack: justify;
 	justify-content: space-between;
 	-ms-flex-align: center;
@@ -137,7 +142,15 @@ ul, li{
 	-ms-flex: none;
 	flex: none;
 	transition-duration: .3s;
-	padding-top: 30px;	
+}
+.button_small{
+	width: 160px;
+	height: 45px;
+	font-size: 13px;
+	-ms-flex-pack: center;
+	justify-content: center;
+	box-shadow: 5px 5px 0 rgba(0,0,0,.05);
+	padding: 0;
 }
 .pc-hide{
 	display: none!important;

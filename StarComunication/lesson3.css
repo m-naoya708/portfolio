@@ -7,8 +7,22 @@
 ul, li{
 	list-style: none;
 }
-body{
-	font-family:YakuHanJP,Noto Sans JP,Hiragino Kaku Gothic ProN,"メイリオ",Osaka,"ＭＳ Ｐゴシック",sans-serif;
+body {
+    font-weight: 400;
+    font-family: YakuHanJP,Noto Sans JP,Hiragino Kaku Gothic ProN,"メイリオ",Osaka,"ＭＳ Ｐゴシック",sans-serif;
+    color: #222;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    line-height: 1.625;
+    box-sizing: border-box;
+    transition: right .3s ease;
+    position: static;
+    right: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    overflow-y: scroll;
 }
 .l-wrapper{
 	overflow: hidden;
@@ -146,8 +160,9 @@ header{
 	border-radius: 100%;
 	text-align: center;
 }
-.buttom-arrow{
-	width: 25px;
+.button-arrow svg {
+    width: 8px;
+    height: 100%;
 }
 #s-icon-arrow{
     width: 8px;
@@ -563,10 +578,6 @@ em {
     padding-right: 0;
     padding-left: 7.54717%;
 }
-.point_item-texts {
-    flex: 1 1 0px;
-    padding-right: 7.54717%;
-}
 .point_item-number {
     display: inline-block;
     background-color: #23d152;
@@ -689,4 +700,326 @@ img {
 }
 .point_item-products dd {
     display: inline;
+}
+
+/*ーーーーーーーーーーーーーーーーここからSceneーーーーーーーーーーーーーーーー*/
+.scenes {
+    position: relative;
+    padding-bottom: 118px;
+    margin-bottom: 160px;
+}
+.scenes:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 336px;
+    width: 92.67936%;
+    height: 70.6%;
+    border-radius: 0 30px 30px 0;
+    background-color: #f5f5f5;
+}
+.scenes .garnish_text {
+    top: 208px;
+    left: -174px;
+}
+.garnish_text {
+    position: absolute;
+    font-size: 175px;
+    font-family: Montserrat,sans-serif;
+    line-height: .75;
+    letter-spacing: 0;
+    color: #f5f5f5;
+}
+.scenes .heading_section {
+    margin-bottom: 123px;
+}
+.scenes .heading_section small {
+    color: #23d152;
+}
+.heading_section small {
+    display: inline-block;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 17px;
+}
+.scenes .heading_section span {
+	color: #222;
+}
+.heading_section span {
+	display: inline-block;
+	font-size: 50px;
+	font-weight: 800;
+	line-height: 1.3;
+	letter-spacing: .03em;
+	margin-right: -6px;
+}
+.scenes_list {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: 3px;
+	margin-bottom: 29px;
+	margin-top: -100px;
+	padding-bottom: 100px;
+}
+ol[data-trigger].visible>li, ul[data-trigger].visible>li {
+    opacity: 1;
+    transform: translateY(0);
+}
+ol[data-trigger]>li:nth-child(1), ul[data-trigger]>li:nth-child(1) {
+    transition-delay: .2s;
+}
+ol[data-trigger]>li:nth-child(2), ul[data-trigger]>li:nth-child(2) {
+    transition-delay: .4s;
+}
+ol[data-trigger]>li:nth-child(3), ul[data-trigger]>li:nth-child(3) {
+    transition-delay: .6s;
+}
+ol[data-trigger]>li:nth-child(4), ul[data-trigger]>li:nth-child(4) {
+    transition-delay: .8s;
+}
+ol[data-trigger]>li:nth-child(5), ul[data-trigger]>li:nth-child(5) {
+    transition-delay: 1s;
+}
+ol[data-trigger]>li:nth-child(6), ul[data-trigger]>li:nth-child(6) {
+    transition-delay: 1.2s;
+}
+.scene_item:nth-of-type(3n+1) {
+    top: calc(100*1px);
+}
+.scene_item:nth-of-type(3n+2) {
+    top: calc(50*1px);
+}
+.scene_item:nth-of-type(n+4) {
+    margin-top: 40px;
+}
+.scene_item:nth-of-type(3n+1) {
+    margin-left: 0;
+}
+.scene_item {
+	width: 30.98291%;
+	margin-left: 3.20513%;
+	position: relative;
+	border-radius: 18px;
+	box-shadow: 6px 6px 0 rgba(0,0,0,.05);
+	overflow: hidden;
+	background-color: #f5f5f5;
+}
+.scene_item-image {
+    display: block;
+    width: 100%;
+}
+.scene_item-title {
+    background-image: linear-gradient(to right,#23d152,#60e031);
+    font-size: 15px;
+    font-weight: 700;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+.scenes_statement {
+    position: relative;
+    text-align: right;
+    font-size: 18px;
+    line-height: 1.7;
+    margin-right: 10px;
+}
+[data-trigger]:not(ol):not(ul).visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+.scenes_statement+.scenes_statement {
+    margin-top: 1.5em;
+}
+.scenes_statement em {
+    font-weight: 700;
+    background-color: #f5ff00;
+}
+/*ーーーーーーーーーーーーーーーーご利用までの４ステップーーーーーーーーーーーーーーーー*/
+.steps {
+    margin-bottom: 280px;
+}
+.steps .garnish_text {
+    transform-origin: top right;
+    transform: rotate(-90deg);
+    top: 295px;
+    right: 28px;
+}
+.steps .heading_section {
+    text-align: center;
+    margin-bottom: 67px;
+}
+.steps .heading_section small {
+    color: #23d152;
+}
+.steps_list {
+    counter-reset: steps-item;
+    margin-left: 3px;
+    margin-right: 3px;
+}
+.steps_item {
+    position: relative;
+    box-shadow: 6px 6px 0 rgba(0,0,0,.05);
+    border-radius: 18px;
+    background-color: #fff;
+    padding: 40px 40px 36px 106px;
+    margin-bottom: 14px;
+    counter-increment: steps-item;
+}
+.steps_item:nth-of-type(1):before {
+    left: 46px;
+}
+.steps_item:before {
+    content: counter(steps-item);
+    position: absolute;
+    font-family: Montserrat,sans-serif;
+    color: #23d152;
+    font-size: 60px;
+    top: 5px;
+    left: 40px;
+}
+.steps_item-title {
+    font-size: 20px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    line-height: 1.3;
+    background-image: linear-gradient(to top,#f5ff00 0,#f5ff00 50%,transparent 50%,transparent 100%);
+    margin-bottom: 15px;
+}
+.steps_item-description {
+    font-size: 15px;
+    line-height: 2;
+}
+.steps_item-description a {
+    font-weight: 700;
+    text-decoration: underline;
+}
+.steps_item:after {
+    content: url(data:image/svg+xml;charset=utf8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2045.08%2022%22%3E%3Cdefs%3E%3Cstyle%3E.cls-1%7Bfill%3A%23f2f2f2%3B%7D.cls-2%7Bfill%3A%23fff%3B%7D%3C%2Fstyle%3E%3C%2Fdefs%3E%3Cg%20id%3D%22%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC_2%22%20data-name%3D%22%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%202%22%3E%3Cg%20id%3D%22%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC_1-2%22%20data-name%3D%22%E3%83%AC%E3%82%A4%E3%83%A4%E3%83%BC%201%22%3E%3Cpath%20class%3D%22cls-1%22%20d%3D%22M22.94%2C20.48%2C19%2C13.6A15%2C15%2C0%2C0%2C0%2C6%2C6H45.08a15%2C15%2C0%2C0%2C0-13%2C7.6L28.2%2C20.39A3.1%2C3.1%2C0%2C0%2C1%2C25.7%2C22h-.13A3%2C3%2C0%2C0%2C1%2C22.94%2C20.48Z%22%2F%3E%3Cpath%20class%3D%22cls-2%22%20d%3D%22M16.94%2C14.48%2C13%2C7.6A15%2C15%2C0%2C0%2C0%2C0%2C0H39.08a15%2C15%2C0%2C0%2C0-13%2C7.6L22.2%2C14.39A3.1%2C3.1%2C0%2C0%2C1%2C19.7%2C16h-.13A3%2C3%2C0%2C0%2C1%2C16.94%2C14.48Z%22%2F%3E%3C%2Fg%3E%3C%2Fg%3E%3C%2Fsvg%3E);
+    display: block;
+    position: absolute;
+    width: 46px;
+    height: 23px;
+    bottom: -23px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+.steps_item.-last {
+    background-image: linear-gradient(to right,#23d152,#60e031);
+}
+.steps_item:nth-of-type(n+2) {
+    padding-top: 45px;
+}
+.steps_item.-last:before {
+    color: #fff;
+}
+.steps_item:nth-of-type(n+2):before {
+    top: 10px;
+}
+.steps_item.-last .steps_item-title {
+    color: #f5ff00;
+    background-image: linear-gradient(to top,#23d152 0,#23d152 50%,transparent 50%,transparent 100%);
+}
+.steps_item.-last .steps_item-description {
+    color: #fff;
+}
+/*ーーーーーーーーーここから　Withコロナ時代でも、ハイエンドな映像制作を。ーーーーーーーーーーーーーーーー*/
+.contact {
+    position: relative;
+    padding: 105px 0 100px;
+}
+.contact:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 92.67936%;
+    height: 100%;
+    background-color: #36d44c;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 0 0 30px;
+    z-index: -1;
+}
+.contact_picture {
+	position: absolute;
+	right: 0;
+	top: -80px;
+	width: 52.41581%;
+	height: 501px;
+	border-radius: 30px 0 0 30px;
+	overflow: hidden;
+	box-shadow: 6px 6px 0 rgba(0,0,0,.05);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.contact_title {
+    position: relative;
+    font-size: 50px;
+    font-weight: 800;
+    color: #fff;
+    line-height: 1.3;
+    margin-bottom: 23px;
+}
+.contact_description {
+    position: relative;
+    color: #fff;
+    font-weight: 600;
+    font-size: 15px;
+    margin-bottom: 39px;
+}
+.contact .button, .contact .button_small {
+    position: relative;
+}
+/*ーーーーーーーーーーーーーーここからフッターーーーーーーー*/
+.footer {
+    position: relative;
+    padding: 89px 0 62px;
+    text-align: center;
+}
+.footer_credit {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 36px;
+    letter-spacing: .05em;
+}
+.footer_logo {
+    margin-bottom: 28px;
+}
+.footer_logo a {
+    transition: opacity .2s;
+}
+.footer_copyright {
+    line-height: 1.8;
+}
+.footer_copyright small {
+    font-size: 12px;
+    letter-spacing: .05em;
+}
+.footer_pagetop {
+    position: absolute;
+    transform-origin: top right;
+    transform: rotate(90deg);
+    right: 50px;
+    bottom: 49px;
+    font-size: 13px;
+    font-weight: 600;
+}
+.footer_pagetop:before {
+    content: '';
+    width: 75px;
+    height: 3px;
+    display: inline-block;
+    background-color: #f5f5f5;
+    background-image: linear-gradient(#23d152 0,#23d152 100%);
+    background-size: 40% 100%;
+    background-position: top right;
+    background-repeat: no-repeat;
+    transition: .4s cubic-bezier(.19,1,.22,1);
+    margin-bottom: 3px;
+    margin-right: 12px;
 }

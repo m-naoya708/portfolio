@@ -3,6 +3,7 @@
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
+	letter-spacing: .03em;
 }
 ul, li{
 	list-style: none;
@@ -77,7 +78,19 @@ header{
 	opacity: 1!important;
 /*    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";*/
     padding-bottom: 5px;
-    text-decoration: none;
+}
+.header-navi-list li a::after {
+	content: "";
+	display: block;
+	width: 0;
+	height: 4px;
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	border-radius: 2px;
+	transition: width .4s cubic-bezier(.215,.61,.355,1);
+	background-color: #23d152;
 }
 /*__________________________ここまでがnav要素&ヘッダー部分＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿*/
 
@@ -131,12 +144,17 @@ header{
 	margin-bottom: 45px;
 	line-height: 2;
 }
+.button_small{
+	width: 160px;
+	height: 45px;
+	font-size: 13px;
+	justify-content: center;
+	box-shadow: 5px 5px 0 rgba(0,0,0,.05);
+	padding: 0;
+}
 .button, .button_small{
-	display: -ms-inline-flexbox;
 	display: inline-flex;
-	-ms-flex-pack: justify;
 	justify-content: space-between;
-	-ms-flex-align: center;
 	align-items: center;
 	width: 360px;
 	height: 80px;
@@ -148,7 +166,6 @@ header{
 	box-shadow: 6px 6px 0 rgba(0,0,0,.05);
 	padding: 0 25px 0 35px;
 	color: #222;
-	-ms-flex: none;
 	flex: none;
 	transition-duration: .3s;
 	text-decoration: none;
@@ -210,7 +227,7 @@ header{
 	font-weight: 700;
 }
 .kv_scroll i{
-	width:heder-navi-list 75px;
+	width: 75px;
 	height: 3px;
 	overflow: hidden;
 	position: absolute;
@@ -218,16 +235,35 @@ header{
 	top: 50%;
 	transform: translateY(-50%);
 }
- .kv_scroll i::after{
-	content: "";
-	position: absolute;
-	top: 50%;
-	right: 0;
-	transform: translateY(-50%);
-	height: 3px;
-	width: 75px;
-	background-color: #23d152;
-	animation: anime 1s linear infinite;
+.kv_scroll i:before {
+    background-color: #23d152;
+    z-index: 1;
+    animation: scroll 1.5s infinite linear;
+}
+.kv_scroll i:before, .kv_scroll i:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.kv_scroll i:after {
+    background-color: #fff;
+    opacity: .1;
+}
+.kv_scroll i:before, 
+.kv_scroll i:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 @keyframes anime{
 	0%{
@@ -328,7 +364,7 @@ ol[data-trigger].visible>li{
 .situations_item:nth-of-type(3) {
     top: 160px;
 }
-.situations_item:before {
+.situations_item::before {
     position: absolute;
     content: counter(situations-list);
     font-family: Montserrat,sans-serif;
